@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Nav from './general/Nav';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import companies from './general/static-data';
+import CompanyListPage from './CompanyListPage';
 
 class App extends Component {
   state = {
@@ -17,7 +19,7 @@ class App extends Component {
   renderContent() {
     switch(this.state.activeTab) {
       default:
-      case 0: return <span>Companies</span>
+      case 0: return <CompanyListPage companies={companies} />
       case 1: return <span>Comparison</span>
     }
   }

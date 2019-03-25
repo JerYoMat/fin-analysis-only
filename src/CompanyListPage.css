@@ -1,0 +1,9 @@
+.CompanyListPage-companies {
+  margin: 0;
+  padding: 0;
+}
+
+.CompanyListPage-companies li {
+  list-style: none;
+  margin-bottom: 20px;
+}
