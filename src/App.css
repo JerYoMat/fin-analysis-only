@@ -6,7 +6,7 @@
 .App-nav {
   margin: 20px;
   padding: 10px;
-  border-bottom: 2px solid #508FCA;
+  border-bottom: 2px solid #000000;
 }
 
 .App-nav ul {
@@ -24,4 +24,16 @@
 
 .App-content {
   margin: 0 20px;
+}
+
+.App-nav-item a {
+  cursor: pointer;
+}
+
+.App-nav-item a:hover {
+  color: #999;
+}
+
+.App-nav-item.selected {
+  border-bottom-color: #508FCA;
 }
