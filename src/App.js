@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Nav from './general/Nav';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
 import companies from './general/static-data';
 import CompanyListPage from './CompanyListPage';
 
 class App extends Component {
   state = {
-    activeTab: 0
+    activeTab: 0,
+    companiesToCompare: []
   };
 
   handleTabChange = (index) => {
